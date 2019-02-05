@@ -1,5 +1,6 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
+  config.action_mailer.delivery_method = :letter_opener_web
   config.action_mailer.default_url_options = { host: 'thawing-scrubland-61541.herokuapp.com' }
    ActionMailer::Base.delivery_method = :smtp
    ActionMailer::Base.smtp_settings = {
